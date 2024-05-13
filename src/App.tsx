@@ -5,6 +5,7 @@ import { UsersList } from "./components/UsersList";
 import { users } from "./components/data";
 import { BrandProvider } from "./components/BrandContext";
 import { Logo } from "./components/Logo";
+import { UsersListWithReducer } from "./components/UsersListWithReducer";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -12,8 +13,9 @@ function App() {
   return (
     <BrandProvider>
       <div>
-        <Logo />
-        <UsersList data={users} />
+        {/* <Logo /> */}
+        {/* <UsersList data={users} /> */}
+        <UsersListWithReducer />
       </div>
     </BrandProvider>
   );
